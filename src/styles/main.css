@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    @apply max-w-6xl m-auto px-4 sm:px-6;
+}
+
+.btn {
+    @apply focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary focus:outline-none
+}
+
+.nav-item {
+    @apply block sm:inline mx-3 pb-2 uppercase text-white text-xs hover:border-b-4 hover:border-b-white focus:ring-brand-primary;
+}
+
+.btn-menu {
+    @apply outline-none rounded-md p-2 inline-flex items-center justify-center text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-primary;
+}
+
+.nav-item-active {
+    @apply border-b-4 border-b-brand-nav-active;
+}
+
+.heading {
+    @apply uppercase font-semibold text-center text-2xl sm:text-4xl font-semibold text-brand-primary;
+}
+
+.lead {
+    @apply text-sm sm:text-lg text-gray-700 leading-6 sm:leading-4;
+}
+
+.blog-item {
+    @apply grid grid-cols-1 gap-8 md:gap-24 md:grid-cols-2;
+}
+
+.blog-image {
+    @apply w-full;
+}
+
+.blog-item:nth-child(even) .blog-image {
+    @apply md:order-last;
+}
+
+.blog-item:nth-child(even) .blog-content {
+    @apply md:text-right;
+}
+
+.blog-content {
+    @apply flex flex-col space-y-2;
+}
+
+.blog-content a {
+    @apply text-gray-900;
+}
+
+.blog-content a:focus,
+.blog-content a:hover {
+    @apply text-brand-primary;
+}
+
+.form-control {
+    @apply text-base text-gray-900 p-4 bg-transparent border-b-4 border-b-gray-900 w-full focus:border-b-brand-nav-active outline-none;
+}
+
+.form-label {
+    @apply block text-base text-gray-500 p-4;
+}
+
+.footer-column {
+    @apply flex flex-col space-y-4;
+}
+
+.footer-heading {
+    @apply text-gray-300 uppercase;
+}
+
+.footer-list-container {
+    @apply text-gray-400 text-sm flex flex-col space-y-1;
+}
+
+.footer-list {
+    @apply py-4 border-b-white/10 border-b
+}
+
+.footer-list-date {
+    @apply block text-gray-500 text-xs mb-2;
+}
+
+@tailwind utilities;

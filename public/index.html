@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <title>Mairala</title>
+</head>
+<body class="bg-white tracking-wide">
+    <header class="py-4 bg-gray-800 top-0 sticky z-20 md:py-8">
+        <nav class="container flex items-center justify-between">
+            <a href="#" title="Mairala">
+                <img class="w-2/3 md:w-full" src="images/logo.png" alt="Mairala">
+            </a>
+            <div class="hidden md:block">
+                <ul class="list-none md:flex items-center space-x-2">
+                    <li>
+                        <a class="nav-item nav-item-active" href="#" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#" title="About">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#" title="Portfolios">Portfolios</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#" title="Blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="nav-item mr-0" href="#" title="Blog">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button btn-menu">
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                        class="w-6 h-6"
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="mobile-menu max-w-sm hidden absolute xs:max-w-md h-72 bg-gray-900 mx-auto mt-5 inset-0 p-2 shadow-lg">
+            <button type="button" class="mobile-close-button btn-menu justify-end w-full">
+                <span class="sr-only">Close main menu</span>
+                <svg class="h-6 w-6" x-description="Heroicon name: outline/x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <ul class="list-none flex flex-col space-y-4">
+                <li>
+                    <a class="nav-item nav-item-active" href="#" title="Home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#" title="About">About</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#" title="Portfolios">Portfolios</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#" title="Team">Team</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#" title="Blog">Blog</a>
+                </li>
+                <li>
+                    <a class="nav-item mr-0" href="#" title="Blog">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile menu ends -->
+    </header>
+    <main>
+        <!-- Hero -->
+        <div class="relative pb-2/3 xs:pb-40">
+            <img src="images/bg-hero.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <div class="container absolute inset-0 w-full h-full flex flex-col justify-center items-center sm:items-start">
+                <p class="text-white font-medium uppercase text-sm md:text-base">Grab Your Copy Of</p>
+                <h1 class="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-6xl mt-2 mb-6 heading">The <span class="text-brand-primary">Premium</span> Quality <br>PSD Template For free</h1>
+                <button class="btn bg-button text-white py-4 px-16 rounded uppercase flex items-center justify-center text-sm md:text-base">Download <i class="fa fa-download ml-2"></i></i></button>
+            </div>
+        </div>
+        <!-- Hero ends -->
+        <!-- Services -->
+        <div class="container py-10 sm:py-16 md:py-20">
+            <div class="max-w-5xl mx-auto mb-10 sm:mb-16 md:mb-20 text-center">
+                <h2 class="uppercase text-xl sm:text-2xl font-semibold text-brand-primary">Services We provide</h2>
+                <p class="mt-4 leading-6 text-base sm:leading-8 text-black">Volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+                    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu 
+                    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent</p>
+            </div>
+            <dl class="text-center md:grid md:grid-cols-3 md:gap-x-8 space-y-8 md:space-y-0">
+                <div>
+                    <dt>
+                        <i class="fa fa-users text-3xl text-brand-primary"></i>
+                        <p class="text-lg text-gray-700 leading-6 my-5 uppercase">Consultancy</p>
+                    </dt>
+                    <dd class="text-gray-400">
+                        Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam 
+                    </dd>
+                </div>
+                <div>
+                    <dt>
+                        <i class="fa fa-bullhorn text-3xl text-brand-primary"></i>
+                        <p class="text-lg text-gray-700 leading-6 my-5 uppercase">Marketing</p>
+                    </dt>
+                    <dd class="text-gray-400">
+                        Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam 
+                    </dd>
+                </div>
+                <div>
+                    <dt>
+                        <i class="fa fa-flask text-3xl text-brand-primary"></i>
+                        <p class="text-lg text-gray-700 leading-6 my-5 uppercase">Research</p>
+                    </dt>
+                    <dd class="text-gray-400">
+                        Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam 
+                    </dd>
+                </div>
+            </dl>
+        </div>
+        <!-- Services ends -->
+        <!-- Blog -->
+        <div class="container py-6 sm:py-8 md:py-12">
+            <div class="max-w-lg mx-auto mb-10 sm:mb-16 md:mb-20 text-center flex items-center flex-col space-y-8">
+                <h2 class="heading text-2xl sm:text-4xl font-semibold text-brand-primary">Our Blog</h2>
+                <span class="w-24 h-2 bg-brand-primary block"></span>
+                <p class="mt-4 leading-6 text-base sm:leading-8 text-black">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim</p>
+            </div>
+            <div class="blog flex flex-col space-y-12 md:space-y-16">
+                <div class="blog-item">
+                    <img class="blog-image" src="images/img-blog.png" alt="Camera">
+                    <div class="blog-content">
+                        <p class="text-base text-gray-500">
+                            <time>10 April 2014</time>
+                        </p>
+                        <h3 class="text-2xl">
+                            <a href="#" title="Typi non habent claritatem insitam">Typi non habent claritatem insitam</a>
+                        </h3>
+                        <p class="text-gray-400">Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                            esse molestie consequat, vel illum dolore eu feugiat nulla 
+                            facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <img class="blog-image" src="images/img-blog.png" alt="Camera">
+                    <div class="blog-content">
+                        <p class="text-base text-gray-500">
+                            <time>10 April 2014</time>
+                        </p>
+                        <h3 class="text-2xl">
+                            <a href="#" title="Typi non habent claritatem insitam">Typi non habent claritatem insitam</a>
+                        </h3>
+                        <p class="text-gray-400">Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                            esse molestie consequat, vel illum dolore eu feugiat nulla 
+                            facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <img class="blog-image" src="images/img-blog.png" alt="Camera">
+                    <div class="blog-content">
+                        <p class="text-base text-gray-500">
+                            <time>10 April 2014</time>
+                        </p>
+                        <h3 class="text-2xl">
+                            <a href="#" title="Typi non habent claritatem insitam">Typi non habent claritatem insitam</a>
+                        </h3>
+                        <p class="text-gray-400">Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                            esse molestie consequat, vel illum dolore eu feugiat nulla 
+                            facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog ends -->
+        <!-- Contact -->
+        <div class="bg-gray-100 mt-12 sm:mt-24">
+            <div class="container py-6 sm:py-8 md:py-12">
+                <h2 class="heading my-4">Contact</h2>
+                <form action="#" class="max-w-2xl mx-auto space-y-20 divide-y divide-gray-900">
+                    <div class="mt-12 grid grid-cols-1 gap-y-0 gap-x-10 sm:grid-cols-2">
+                        <div class="sm:col-span-1">
+                            <div>
+                                <input class="form-control" type="text" name="name" id="name" autocomplete="full-name">
+                            </div>
+                            <label class="form-label" for="name" class="block text-base text-gray-500 px-4 py-4">
+                                Name <span>*</span>
+                            </label>
+                        </div>
+                        <div class="sm:col-span-1">
+                            <div>
+                                <input class="form-control" type="email" name="email" id="email" autocomplete="email">
+                            </div>
+                            <label class="form-label" for="email" class="block text-base text-gray-500 px-4 py-4">
+                                Email <span>*</span>
+                            </label>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <div>
+                                <textarea class="form-control" name="message" id="message" autocomplete="message" rows="1"></textarea>
+                            </div>
+                            <label class="form-label" for="email">
+                                Message...
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="button" class="btn bg-white py-2 px-16 mt-8 border-2 border-black text-gray-700 text-lg hover:bg-gray-50">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Contact ends -->
+    </main>
+    <footer>
+        <div class="bg-gray-900">
+            <div class="container py-6 sm:py-8 md:py-12">
+                <div class="md:grid-cols-2 md:gap-6 grid lg:grid-cols-4 lg:gap-x-8 lg:space-y-0 space-y-8">
+                    <div class="footer-column">
+                        <img class="w-1/4 md:w-1/3 xl:w-1/2" src="images/logo-footer.png" alt="Mairala">
+                        <div class="text-gray-400 text-sm flex flex-col space-y-6">
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel ill</p>
+                            <p>eugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Recent Posts</h3>
+                        <div class="footer-list-container">
+                            <div class="footer-list">
+                                <span class="footer-list-date">
+                                    <time>10 April 2014</time>
+                                </span>
+                                <p>
+                                    <a href="#" title="Duis autem vel eum iriure dolor">Duis autem vel eum iriure dolor</a>
+                                </p>
+                            </div>
+                            <div class="footer-list">
+                                <span class="footer-list-date">
+                                    <time>10 April 2014</time>
+                                </span>
+                                <p>
+                                    <a href="#" title="Duis autem vel eum iriure dolor">Duis autem vel eum iriure dolor</a>
+                                </p>
+                            </div>
+                            <div class="footer-list">
+                                <span class="footer-list-date">
+                                    <time>10 April 2014</time>
+                                </span>
+                                <p>
+                                    <a href="#" title="Duis autem vel eum iriure dolor">Duis autem vel eum iriure dolor</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Twiter Feeds</h3>
+                        <div class="footer-list-container">
+                            <div class="footer-list">
+                                <span class="footer-list-date">
+                                    <time>about 2 days ago <a class="text-sm text-gray-500 hover:text-gray-300" href="#" title="follow @kristianplatt">@kristianplatt</a></time>
+                                </span>
+                                <p>
+                                    <a href="#" title="Duis autem vel eum iriure dolor">Duis autem vel eum iriure dolor</a>
+                                </p>
+                            </div>
+                            <div class="footer-list">
+                                <span class="footer-list-date">
+                                    <time>about 2 days ago <a class="text-sm text-gray-500 hover:text-gray-300" href="#" title="follow @kristianplatt">@kristianplatt</a></time>
+                                </span>
+                                <p>
+                                    <a href="#" title="Duis autem vel eum iriure dolor">Duis autem vel eum iriure dolor</a>
+                                </p>
+                            </div>
+                            <div class="footer-list">
+                                <span class="footer-list-date">
+                                    <time>about 2 days ago <a class="text-sm text-gray-500 hover:text-gray-300" href="#" title="follow @kristianplatt">@kristianplatt</a></time>
+                                </span>
+                                <p>
+                                    <a href="#" title="Duis autem vel eum iriure dolor">Duis autem vel eum iriure dolor</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading">Our Address</h3>
+                        <div class="footer-list-container space-y-8">
+                            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta </p>
+                            <div class="footer-list-container space-y-1">
+                                <p><i class="fa fa-map-marker mr-1"></i> Moonshine St. 14/05 Light, Jupiter</p>
+                                <p><i class="fa fa-phone mr-1"></i> +00 (123) 456 78 90</p>
+                                <p><i class="fa fa-envelope mr-1"></i> first.last@email.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-dark">
+            <div class="container py-6">
+                <p class="text-center text-gray-500">&copy;2014 Imran Khan All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
